@@ -17,7 +17,7 @@ public class Application {
 		// Another way to start the application
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(Application.class);
 
-		builder.bannerMode(Banner.Mode.OFF); // disable Spring banner
+		// builder.bannerMode(Banner.Mode.OFF); // disable Spring banner
 		builder.profiles("producer", "hml"); // activate a development profile
 		builder.run(args);
 
@@ -28,7 +28,7 @@ public class Application {
 
 		ConfigurableEnvironment environment = applicationContext.getEnvironment();
 		String applicationName = environment.getProperty("spring.application.name");
-		System.out.println("Nome da aplicação: " + applicationName);
+		System.out.println("Application name: " + applicationName);
 
 	}
 
