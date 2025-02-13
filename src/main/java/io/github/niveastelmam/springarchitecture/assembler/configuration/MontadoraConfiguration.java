@@ -1,7 +1,7 @@
-package io.github.niveastelmam.springarchitecture.montadora.configuration;
+package io.github.niveastelmam.springarchitecture.assembler.configuration;
 
-import io.github.niveastelmam.springarchitecture.montadora.Motor;
-import io.github.niveastelmam.springarchitecture.montadora.TipoMotor;
+import io.github.niveastelmam.springarchitecture.assembler.Motor;
+import io.github.niveastelmam.springarchitecture.assembler.TipoMotor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;

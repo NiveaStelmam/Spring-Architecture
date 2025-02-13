@@ -1,9 +1,8 @@
-package io.github.niveastelmam.springarchitecture.montadora.api;
+package io.github.niveastelmam.springarchitecture.assembler.api;
 
 
-import io.github.niveastelmam.springarchitecture.montadora.*;
+import io.github.niveastelmam.springarchitecture.assembler.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,4 +1,4 @@
-package io.github.niveastelmam.springarchitecture.montadora;
+package io.github.niveastelmam.springarchitecture.assembler;
 
 public class Motor {
     private String modelo;

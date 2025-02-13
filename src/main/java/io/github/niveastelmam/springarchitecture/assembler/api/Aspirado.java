@@ -1,4 +1,4 @@
-package io.github.niveastelmam.springarchitecture.montadora.api;
+package io.github.niveastelmam.springarchitecture.assembler.api;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 
@@ -9,6 +9,6 @@ import java.lang.annotation.Target;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.METHOD})
-@Qualifier("motorTurbo")
-public @interface Turbo {
+@Qualifier("motorAspirado")
+public @interface Aspirado {
 }
