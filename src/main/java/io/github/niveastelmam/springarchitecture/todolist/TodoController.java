@@ -12,11 +12,12 @@ public class TodoController {
     private TodoService service;
 
     public TodoController(TodoService service) {
+
         this.service = service;
     }
 
     @PostMapping
-    public TodoEntity salvar(@RequestBody TodoEntity todo){
+    public TodoEntity save(@RequestBody TodoEntity todo){
        try{
            return this.service.save(todo);
        }catch (IllegalArgumentException e){
@@ -28,7 +29,6 @@ public class TodoController {
 
     @PutMapping("{id}")
     public void updateStatus(@PathVariable("id") Integer id, @RequestBody TodoEntity todo ){
-
         todo.setId(id);
         service.updateStatus(todo);
     }
