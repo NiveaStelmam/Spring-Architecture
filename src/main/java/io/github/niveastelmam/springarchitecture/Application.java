@@ -20,7 +20,7 @@ public class Application {
 		// builder.bannerMode(Banner.Mode.OFF); // disable Spring banner
 		builder.profiles("producer", "hml"); // activate a development profile
 		builder.run(args);
-
+		//builder.lazyInitialization(true);
 
 		ConfigurableApplicationContext applicationContext = builder.context();
 
