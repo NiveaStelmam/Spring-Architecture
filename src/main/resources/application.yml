@@ -9,4 +9,5 @@ spring:
 app:
   config:
     variable: test with value
+    value1: 200
 

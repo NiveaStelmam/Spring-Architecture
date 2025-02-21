@@ -2,12 +2,15 @@ package io.github.niveastelmam.springarchitecture;
 
 import org.springframework.boot.Banner;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.core.env.ConfigurableEnvironment;
 
 @SpringBootApplication
+@EnableConfigurationProperties
 public class Application {
 
 	public static void main(String[] args) {
@@ -32,6 +35,10 @@ public class Application {
 
 		ValueExample value = applicationContext.getBean(ValueExample.class);
 		value.printVariable();
+
+		AppProperties properties = applicationContext.getBean(AppProperties.class);
+		System.out.println(properties.getValue1());
+
 	}
 
 }
