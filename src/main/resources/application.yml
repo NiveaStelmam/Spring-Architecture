@@ -6,3 +6,7 @@ spring:
   main:
     lazy-initialization: false
 
+app:
+  config:
+    variable: test with value
+
